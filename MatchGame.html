@@ -3,64 +3,47 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<link rel=stylesheet href="C:\Users\Amanda\Desktop\PracticeWebsite\stylesheet\CSSPage.css"></link>
-		<script src="javascript\JavaPage.java"></script>
+		<link rel=stylesheet href="stylesheets\CSSPage.css" media="screen and (min-width: 1px)"></link>
+		<link rel=stylesheet href="stylesheets\MediaBreakpoints.css" media="only screen and (max-width: 1200px)"></link>
+		<script src="javascript\JavaScriptPage.js"></script>
 		<title>Match Game</title>
 	</head>
 	<body>
-		<h1>Match Game</h1>
 		<section id="timer">
 			<div>Time: <p id="timeRemaining"></p></div>
 			<button type="button" alt="startButton" id="startButton" onclick="startCountdown()">GO!</button>
 		</section>
+		<section id="directions">
+			<p>Welcome to the Halloween Match Game!</p>
+			<h4>Directions:</h4>
+			<ol> 
+				<li> Click the 'Go!' button in the top left corner.</li>
+				<li> Match two of the same image. Do this for all cards and complete all mathes before the time runs out.</li>
+				<li> Play again by refreshing the page and clicking the 'Go!' button again.</li>
+			</ol>
+			<p>Good luck!</p>
+		</section>
 		<section id="tiles">
 			<table>
 				<tr>
-					<td>
-						<img src="images/Bats.png" alt="bats" onclick="setValues('1')">
-					</td>
-					<td>
-						<img src="images/WitchHat.png" alt="witchHat" onclick="setValues('2')">
-					</td>
-					<td>
-						<img src="images/Werewolf.gif" alt="werewolf" onclick="setValues('3')">
-					</td>
-					<td>
-						<img src="images/BlackCat.png" alt="blackCat" onclick="setValues('4')">
-					</td>
+					<td><img src="images/Bats.png" alt="bats" onclick="setValues('1')"></td>
+					<td><img src="images/WitchHat.png" alt="witchHat" onclick="setValues('2')"></td>
+					<td><img src="images/Werewolf.gif" alt="werewolf" onclick="setValues('3')"></td>
+					<td><img src="images/BlackCat.png" alt="blackCat" onclick="setValues('4')"></td>
 				</tr>
 				<tr>
-					<td>
-						<img src="images/Pumpkin.png" alt="pumpkin" onclick="setValues('5')">
-					</td>
-					<td>
-						<img src="images/WitchFace.jpg" alt="witchFace" onclick="setValues('6')">
-					</td>
-					<td>
-						<img src="images/WitchHat.png" alt="witchHat" onclick="setValues('2')">
-					</td>
-					<td>
-						<img src="images/Pumpkin.png" alt="pumpkin" onclick="setValues('5')">
-					</td>
+					<td><img src="images/Pumpkin.png" alt="pumpkin" onclick="setValues('5')"></td>
+					<td><img src="images/WitchFace.jpg" alt="witchFace" onclick="setValues('6')"></td>
+					<td><img src="images/WitchHat.png" alt="witchHat" onclick="setValues('2')"></td>
+					<td><img src="images/Pumpkin.png" alt="pumpkin" onclick="setValues('5')"></td>
 				</tr>
 				<tr>
-					<td>
-						<img src="images/Werewolf.gif" alt="werewolf" onclick="setValues('3')">
-					</td>
-					<td>
-						<img src="images/Bats.png" alt="bats" onclick="setValues('1')">
-					</td>
-					<td>
-						<img src="images/BlackCat.png" alt="blackCat" onclick="setValues('4')">
-					</td>
-					<td>
-						<img src="images/WitchFace.jpg" alt="witchFace" onclick="setValues('6')">
-					</td>
+					<td><img src="images/Werewolf.gif" alt="werewolf" onclick="setValues('3')"></td>
+					<td><img src="images/Bats.png" alt="bats" onclick="setValues('1')"></td>
+					<td><img src="images/BlackCat.png" alt="blackCat" onclick="setValues('4')"></td>
+					<td><img src="images/WitchFace.jpg" alt="witchFace" onclick="setValues('6')"></td>
 				</tr>
 			</table>
 		</section>
 	</body>
-	<footer>
-		Match Game by Amanda Bradley &copy 2018
-	</footer>
 </html>

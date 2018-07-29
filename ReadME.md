@@ -1,6 +1,11 @@
 # HalloweenMatchGame
 
 Halloween themed match game. Match the images to their partners before the clock runs out.
-Functionality I plan to build in (coming soon) - improved clock and hiding/showing pictures.
-Second iteration - as you pass/complete level 1, you will move on to level 2 which will contain more pictures and/or less time.
-Several iterations - harder levels each time.
+
+Functionality to add:
+	-randomize how the pictures appear - they are currently hard-coded, but should be dynamically generated/set
+	-error checking (user clicked same card twice, user clicks 'Go!' button again, etc.
+	-as user passes each level, it will get harder and more pictures will be shown to match and/or they will have less time to match
+	-depending on the time of year (closest holiday), display the corresponding cards
+		-closest holiday is Halloween? show these cards; closest holiday is Christmas? show these cards instead
+		-update background and styles to match
